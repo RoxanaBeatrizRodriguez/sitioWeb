@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi proyecto web</title>
+  
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/presupuesto.css">
+</head>
+<body>
+    <main>
+        <header class="encabezado">
+            <figure class="logo">
+                <img src="img/logo-daniel.png" alt="imagen de logo">        
+            </figure>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos y Soluciones</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+        
+        </header>
+        <section class="formulario">
+            <form action="datos.php" method="post" class="form">
+                <!--<label for="name">Nombre:</label><br>-->
+                <input id="name" type="text" name="nombre" required placeholder="Indique nombre...">
+                
+                <br><br>
+               <!--<label for="apellido">Apellido:</label><br>-->
+                <input type="tex" id="apellido" name="apellido" required placeholder="Indique Apellido...">
+                <br><br>
+                <!--<label for="email">Email</label><br>-->
+                <input type="email" id="email" name="email" required placeholder="Indique Email...">
+                <br> <br>
+               <!-- <label for="telefono">Telefono</label><br>-->
+                <input type="text" id="telefono" name="telefono" required placeholder="Indique Telefono...">
+                <br><br>
+               <!-- <label for="password">Clave secreta</label><br>-->
+                <input type="password" id="password" name="password" required placeholder="Indique clave..."><span id="ojoSpan" ><ion-icon class="ojo" name="eye-off-outline"></ion-icon></span>
+                <br><br>
+                <!--<label for="pagos">Seleccione tipo de pago </label><br>-->
+                <select name="pagos" id="pagos" required >
+                    <option value="#" selected disabled>Tipo de pago</option>
+                    <option value="1">Debito</option>
+                    <option value="2">Credito</option>
+                    <option value="3">Tranferencia bancaria</option>
+                    <option value="4"> Mercado pago </option>
+                </select>
+                <br><br>
+                <!--<label for="observaciones">Observaciones</label><br>-->
+                <textarea name="observaciones" id="observaciones" cols="30" rows="5" required placeholder="Indique sus obsevaciones..."></textarea>
+                <br><br>
+                <button class="boton" type="submit" > Guardar</button>
+            </form>
+            
+        </section>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <script src="js/presupuesto.js"></script>
+   
+
+</body>
+</html>

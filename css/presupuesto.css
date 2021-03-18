@@ -1,0 +1,37 @@
+.formulario{
+    background-image: url("../img/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 55px;
+    padding-left: 30px;
+    
+}
+.form{
+    width: 30%;
+    margin: auto;
+    background-color: rgba(188,100,202,0.5);
+    border-radius: 2%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    
+}
+input, textarea, select{
+    border: none;
+    border-bottom: red solid 2px;
+    font-size: 1.1rem
+}
+.boton{
+    background-color: #87C98F;
+    color: white;
+    padding: 10px;
+}
+textarea{
+    resize: none;
+}
+.ojo{
+   font-size: 1.2rem;
+  
+    
+}
+
